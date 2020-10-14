@@ -25,6 +25,7 @@ h1{
   margin-top:20vh;
 }
 .center{
+  margin-top: 5px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -38,6 +39,17 @@ h1{
 }
 .inputField{
   width: 30%;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 .outputBox{
   border-radius: 20px;
