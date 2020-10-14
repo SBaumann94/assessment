@@ -6,10 +6,8 @@ body {
   background-color: black;
   color:lightgreen
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1{
+  margin-top:20vh;
 }
 
 .particles {
@@ -21,9 +19,6 @@ code {
   z-index: -1;
 }
 
-h1{
-  margin-top:20vh;
-}
 .center{
   margin-top: 5px;
   display: flex;
@@ -34,22 +29,12 @@ h1{
   background-color: darkgreen;
   color: white;
 }
+
 .inputField, button, .outputBox{
   font-size: calc(1.5vw + 2vh);
 }
 .inputField{
   width: 30%;
-}
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
 }
 .outputBox{
   border-radius: 20px;
@@ -57,9 +42,21 @@ input[type=number] {
   background-color: rgba(100, 255,100, 0.8);
   color:red
 }
+
 .hidden{
   display: none;
 }
 .visible{
   display: flex;
+}
+
+/* hiding input number scroll in Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* hiding input number scroll in Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
